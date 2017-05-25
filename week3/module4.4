@@ -1,0 +1,4 @@
+SELECT evntNo,dateAuth,status
+FROM EventRequest
+WHERE (EventRequest.status = 'Approved' OR EventRequest.status = 'Denied') AND 
+EventRequest.dateAuth BETWEEN '01-Jul-2013' AND '31-Jul-2013';
