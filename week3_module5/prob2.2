@@ -1,0 +1,21 @@
+//CODE FOR THE GIVEN PROBLEM TO UPDATE THE TABLE
+
+insert into Loaction (locNo, facNo, locName) values ('L107', 'F104', 'Door');
+select * from Location;
+
+//CODE FOR THE INITIAL TABLE ENTRY
+create table Location (
+  locNo   CHAR(8)     NOT NULL,
+  facNo   CHAR(8)     NOT NULL,
+  locName VARCHAR(30) NOT NULL,
+  CONSTRAINT PK_Location PRIMARY KEY (locNo),
+  CONSTRAINT FKFacility FOREIGN KEY (facNo) REFERENCES Facility (facNo)
+);
+insert into Location (locNo, facNo, locName) values ('L100', 'F100', 'Locker room');
+insert into Location (locNo, facNo, locName) values ('L101', 'F100', 'Plaza');
+insert into Location (locNo, facNo, locName) values ('L102', 'F100', 'Vehicle gate');
+insert into Location (locNo, facNo, locName) values ('L103', 'F101', 'Locker room');
+insert into Location (locNo, facNo, locName) values ('L104', 'F100', 'Ticket Booth');
+insert into Location (locNo, facNo, locName) values ('L105', 'F101', 'Gate');
+insert into Location (locNo, facNo, locName) values ('L106', 'F100', 'Pedestrian gate');
+select * from Location;
