@@ -1,0 +1,18 @@
+//CODE FOR THE REQUIRED PROBLEM FOR UPDATION
+insert into Facility (facNo, facName) values ('F104','Swimming Pool');
+select * from Facility;
+
+
+//CODE FOR THE TABLE ENTRY TO SHOW THE REQUIRED CHANGES ON IT.
+drop table Facility;
+CREATE TABLE Facility (
+  facNo   CHAR(8)    NOT NULL,
+  facName VARCHAR(30) NOT NULL,
+  CONSTRAINT PK_Facility PRIMARY KEY (facNo)
+);
+insert into Facility (facNo, facName) values ('F100','Football stadium');
+insert into Facility (facNo, facName) values ('F101','Basketball arena');
+insert into Facility (facNo, facName) values ('F102','Baseball field');
+insert into Facility (facNo, facName) values ('F103','Recreation room');
+select * from Facility;
+
